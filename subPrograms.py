@@ -23,14 +23,14 @@ def determine(buyprice, sellprice):
 # Establishing the difference between the buy and sell price (Go getter)
 def difference(buyprice, sellprice):
     diff = float(buyprice - sellprice)
-    print(diff)
+    print(round(diff, 4))
     return diff
 
 
 # Establishing the percentage difference
 def differencePercentage(diff, buyprice):
     percentage = ((diff / buyprice) * 100)
-    print(str(percentage) + "%")
+    print(str(round(percentage, 2)) + "%")
     return percentage
 
 
@@ -38,3 +38,4 @@ def differencePercentage(diff, buyprice):
 def amount(tradeamount, percentage):
     amountDiff = ((percentage / 100) * tradeamount)
     print(str(round(amountDiff, 2)) + "ksh")
+    return amountDiff

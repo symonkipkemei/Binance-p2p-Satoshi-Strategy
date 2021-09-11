@@ -14,8 +14,11 @@ def addtoFile():
     tradeAmount, buyPrice, sellPrice = values()
     gain = determine(buyPrice, sellPrice)
     deviation = difference(buyPrice, sellPrice)
+    deviation = round(deviation, 2)
     percentage = differencePercentage(deviation, buyPrice)
+    percentage = round(percentage, 2)
     amountGainLoss = amount(tradeAmount, percentage)
+    amountGainLoss = round(amountGainLoss, 2)
 
     # create a csv file, do not overwrite if it exists
     tradeRecords = open("tradeRecords.csv", "a")
@@ -33,22 +36,23 @@ def displaytrades():
 
 
 def main():
-    print("Binance p2p calculator\n"
-          "choose option\n"
-          "(1)check if trade is profitable\n"
-          "(2)Add trade to file\n"
-          "(3)display all trades completed\n"
-          "(4)close program\n")
-    option = int(input("option:"))
+    correct = False
+    while not correct:
+        print("\nBinance p2p calculator\n"
+              "choose option\n"
+              "(1)check if trade is profitable\n"
+              "(2)Add trade to file\n"
+              "(3)display all trades completed\n"
+              "(4)close program\n")
+        option = int(input("option:"))
 
-    if option == 1:
-        checkIfProfitable()
-    elif option == 2:
-        addtoFile()
-    elif option == 3:
-        displaytrades()
-    elif option == 4:
-        print("good progress")
-
+        if option == 1:
+            checkIfProfitable()
+        elif option == 2:
+            addtoFile()
+        elif option == 3:
+            displaytrades()
+        elif option == 4:
+            correct = True
 
 main()
