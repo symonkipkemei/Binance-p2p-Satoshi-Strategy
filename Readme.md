@@ -1,6 +1,5 @@
 # Binance p2p profit calculator
 
-##Objective
 Determine if a trade you are about to undertake is
 profitable or not and by what extent
  
