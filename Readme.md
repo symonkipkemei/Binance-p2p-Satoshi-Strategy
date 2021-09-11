@@ -19,6 +19,6 @@ CRYPTO-FIAT
 1. If trade is profitable or not
 2. Percentage of profit or loss
 3. Amount of profit or loss
-
+4. Store data in a csv file
 
 
