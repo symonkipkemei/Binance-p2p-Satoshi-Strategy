@@ -1,4 +1,4 @@
-# Binance p2p profit calculator
+# Binance p2p Satoshi strategy
 
 Determine if a trade you are about to undertake is
 profitable or not and by what extent
