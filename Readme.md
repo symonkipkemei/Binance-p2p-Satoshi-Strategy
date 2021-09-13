@@ -60,5 +60,6 @@ The profit margin is  accrued from :
 3. Low profits but high frequency of trades.
 
 
-
+## Anointing
+Dear lord , As I embark on this journey, may you bless and anoint my trading path. Use me as your tool .
 

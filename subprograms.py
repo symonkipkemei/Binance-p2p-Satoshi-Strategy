@@ -3,7 +3,7 @@ def values():
     buyPrice = float(input("Buying Price: "))
     amountBought = float(input("Amount Bought: "))
     USDTBTC = float("0.0000" + str(input("USDT to BTC Rate: ")))
-    BTCKES = float("50" + str(input("BTC to KES Rate: ")))
+    BTCKES = float(input("BTC to KES Rate: "))
     amountSold = float(input("Amount Sold: "))
     val = (buyPrice, amountBought, USDTBTC, BTCKES, amountSold)
     return val
@@ -19,6 +19,7 @@ def sellprice(USDTBTC, BTCKES):
 # Establishing if trade is profitable or not
 def determine(buyPrice, sellPrice):
     if buyPrice > sellPrice:
+        print("loss")
         return "loss"
     elif sellPrice > buyPrice:
         print("profit")
