@@ -59,6 +59,6 @@ The profit margin is  accrued from :
 2. Instant replacement of seed capital in 20USDT bundles
 3. Low profits but high frequency of trades.
 
-## PROCEDURE
+
 
 
